@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+// * Partials
+@use 'partials/reset';
+@use 'partials/variables' as var;
+
+// * Components
+@use 'components/header';
+
+body {
+   width: 100%;
+   padding-top: var.$header-height;
+   font-family: var.$font-default;
+   background-color: map-get($map: var.$colors-neutral, $key: 'color-01');
+}

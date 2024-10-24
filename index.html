@@ -92,7 +92,11 @@
    </head>
    <body>
       <header class="header">
-         <img class="logo" src="./assets/img/logo.png" alt="Logo image" />
+         <img
+            class="header__logo"
+            src="./assets/img/logo.png"
+            alt="Logo image"
+         />
          <nav class="header__nav">
             <ul>
                <li>Product</li>
@@ -105,323 +109,326 @@
          <input type="checkbox" class="theme-checkbox" />
       </header>
 
-      <main class="section">
-         <div class="section__content">
-            <h1>Create a beautiful landing page with no effort</h1>
-            <p>
-               Urano is a premium template by CodyHouse to help you launch your
-               startup with style
-            </p>
-            <a class="link" href="#product">Learn more</a>
-            <div class="section__companies">
-               <img
-                  src="./assets/img/companies/google.png"
-                  alt="Google Companie"
-               />
-               <img
-                  src="./assets/img/companies/google.png"
-                  alt="Adobe Companie"
-               />
-               <img
-                  src="./assets/img/companies/amazon.png"
-                  alt="Amazon Companie"
-               />
-            </div>
-         </div>
-
-         <div class="section__media">
-            <div class="video--init">
-               <span class="video--init__icon">
-                  <i class="fa-solid fa-play"></i>
-               </span>
-            </div>
-         </div>
-
-         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/PbgKEjNBHqM?si=xyZf2q3Pv9rObLRr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-
-         <img class="section__bg" src="assets/img/bg.png" alt="Background" />
-      </main>
-
-      <section class="section--cards">
-         <h2>First-class components</h2>
-
-         <div class="cards">
-            <article class="cards__card">
-               <i class="fa-solid fa-square-poll-vertical"></i>
-               <h3>Navigations</h3>
-               <p>Lorem ipsum dolor sit amet consectetur</p>
-            </article>
-            <article class="cards__card">
-               <i class="fa-solid fa-image"></i>
-               <h3>Galleries</h3>
-               <p>Lorem ipsum dolor sit amet consectetur</p>
-            </article>
-            <article class="cards__card">
-               <i class="fa-solid fa-wind"></i>
-               <h3>Animations</h3>
-               <p>Lorem ipsum dolor sit amet consectetur</p>
-            </article>
-            <article class="cards__card">
-               <i class="fa-solid fa-gamepad"></i>
-               <h3>Controls</h3>
-               <p>Lorem ipsum dolor sit amet consectetur</p>
-            </article>
-         </div>
-      </section>
-
-      <section class="section--parallax">
-         <div class="section__media">
-            <img
-               src="./assets/img/sticky-feat/sticky-img1.png"
-               alt="Sticky Image"
-            />
-         </div>
-         <div class="section__content">
-            <ul>
-               <li>Import and organize your components</li>
-               <li>Customize colors</li>
-               <li>Export your components in Vue or React</li>
-               <li>Share project with your team</li>
-            </ul>
-         </div>
-      </section>
-
-      <section class="section--tutorials">
-         <h2>Tutorials</h2>
-
-         <div class="medias">
-            <article class="medias__media--video">
-               <div class="video--init">
-                  <span class="video--init__icon">
-                     <i class="fa-solid fa-play"></i>
-                  </span>
-               </div>
-
-               <h3 class="media__title">Getting started</h3>
-               <p class="media__info">8:58</p>
-            </article>
-            <article class="medias__media--video">
-               <div class="video--init">
-                  <span class="video--init__icon">
-                     <i class="fa-solid fa-play"></i>
-                  </span>
-               </div>
-
-               <h3 class="media__title">Getting started</h3>
-               <p class="media__info">8:58</p>
-            </article>
-            <article class="medias__media--video">
-               <div class="video--init">
-                  <span class="video--init__icon">
-                     <i class="fa-solid fa-play"></i>
-                  </span>
-               </div>
-
-               <h3 class="media__title">Getting started</h3>
-               <p class="media__info">8:58</p>
-            </article>
-            <article class="medias__media--video">
-               <div class="video--init">
-                  <span class="video--init__icon">
-                     <i class="fa-solid fa-play"></i>
-                  </span>
-               </div>
-
-               <h3 class="media__title">Getting started</h3>
-               <p class="media__info">8:58</p>
-            </article>
-            <article class="medias__media--video">
-               <div class="video--init">
-                  <span class="video--init__icon">
-                     <i class="fa-solid fa-play"></i>
-                  </span>
-               </div>
-
-               <h3 class="media__title">Getting started</h3>
-               <p class="media__info">8:58</p>
-            </article>
-            <article class="medias__media--video">
-               <div class="video--init">
-                  <span class="video--init__icon">
-                     <i class="fa-solid fa-play"></i>
-                  </span>
-               </div>
-
-               <h3 class="media__title">Getting started</h3>
-               <p class="media__info">8:58</p>
-            </article>
-         </div>
-      </section>
-
-      <section class="section--testimonials">
-         <h2>Hear it from our customers</h2>
-
-         <div class="reviews">
-            <article class="reviews__review">
-               <header>
-                  <div>
-                     <img
-                        src="https://source.unsplash.com/random"
-                        alt="Profile pic"
-                     />
-                     <h3 class="name">John Schnobrich</h3>
-                     <p class="function">Designer, Beta</p>
-                  </div>
-
-                  <i class="fa-brands fa-twitter"></i>
-               </header>
-            </article>
-            <article class="reviews__review">
-               <header>
-                  <div>
-                     <img
-                        src="https://source.unsplash.com/random"
-                        alt="Profile pic"
-                     />
-                     <h3 class="name">John Schnobrich</h3>
-                     <p class="function">Designer, Beta</p>
-                  </div>
-
-                  <i class="fa-brands fa-twitter"></i>
-               </header>
-            </article>
-            <article class="reviews__review">
-               <header>
-                  <div>
-                     <img
-                        src="https://source.unsplash.com/random"
-                        alt="Profile pic"
-                     />
-                     <h3 class="name">John Schnobrich</h3>
-                     <p class="function">Designer, Beta</p>
-                  </div>
-
-                  <i class="fa-brands fa-twitter"></i>
-               </header>
-            </article>
-            <article class="reviews__review">
-               <header>
-                  <div>
-                     <img
-                        src="https://source.unsplash.com/random"
-                        alt="Profile pic"
-                     />
-                     <h3 class="name">John Schnobrich</h3>
-                     <p class="function">Designer, Beta</p>
-                  </div>
-
-                  <i class="fa-brands fa-twitter"></i>
-               </header>
-            </article>
-            <article class="reviews__review">
-               <header>
-                  <div>
-                     <img
-                        src="https://source.unsplash.com/random"
-                        alt="Profile pic"
-                     />
-                     <h3 class="name">John Schnobrich</h3>
-                     <p class="function">Designer, Beta</p>
-                  </div>
-
-                  <i class="fa-brands fa-twitter"></i>
-               </header>
-            </article>
-         </div>
-      </section>
-
-      <section class="section--pricing">
-         <h2>Start creating today</h2>
-         <div class="pricing__switch">
-            <p>Monthly</p>
-            <p>Yearly</p>
-         </div>
-         <div class="pricing__plans">
-            <article class="pricing__plan">
-               <p class="name">Free</p>
-               <h3 class="price">$0 <span class="price__time">/month</span></h3>
-               <ul class="access">
-                  <li><i class="fa-solid fa-circle-check"></i> 1x user</li>
-                  <li>
-                     <i class="fa-solid fa-circle-check"></i> Free 15/days trial
-                  </li>
-                  <li>
-                     <i class="fa-solid fa-circle-check"></i> Access to all
-                     features
-                  </li>
-                  <li><i class="fa-solid fa-circle-check"></i> 1 project</li>
-               </ul>
-               <buttton class="btn">Sign up</buttton>
-            </article>
-            <article class="pricing__plan">
-               <span class="top">Popular</span>
-               <p class="name">Pro</p>
-               <h3 class="price">
-                  $15 <span class="price__time">/month</span>
-               </h3>
-               <ul class="access">
-                  <li><i class="fa-solid fa-circle-check"></i> 1x user</li>
-                  <li>
-                     <i class="fa-solid fa-circle-check"></i> Access to all
-                     features
-                  </li>
-                  <li><i class="fa-solid fa-circle-check"></i> 10 projects</li>
-                  <li>
-                     <i class="fa-solid fa-circle-check"></i> E-commerce
-                     integration
-                  </li>
-                  <li>
-                     <i class="fa-solid fa-circle-check"></i> Email support
-                  </li>
-               </ul>
-               <buttton class="btn--color">Sign up</buttton>
-            </article>
-            <article class="pricing__plan">
-               <p class="name">Enterprise</p>
-               <h3 class="price">
-                  $99 <span class="price__time">/month</span>
-               </h3>
-               <ul class="access">
-                  <li><i class="fa-solid fa-circle-check"></i> 10x user</li>
-                  <li>
-                     <i class="fa-solid fa-circle-check"></i> Access to all
-                     features
-                  </li>
-                  <li>
-                     <i class="fa-solid fa-circle-check"></i> Unlimited project
-                  </li>
-                  <li>
-                     <i class="fa-solid fa-circle-check"></i> E-commerce
-                     integration
-                  </li>
-                  <li><i class="fa-solid fa-circle-check"></i> 24/7 support</li>
-                  <li>
-                     <i class="fa-solid fa-circle-check"></i> Full security
-                  </li>
-               </ul>
-               <buttton class="btn">Sign up</buttton>
-            </article>
-         </div>
-      </section>
-
-      <section class="section--questions">
-         <h2>Questions & Answers</h2>
-
-         <ul class="questions">
-            <li class="questions__question">
-               <span class="number">1</span>
-               <h3 class="title">
-                  How can I download the invoice for my purchase?
-               </h3>
-               <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Quis, exercitationem rem. Nulla aut amet error vero nemo
-                  dignissimos tempore magnam, adipisci veniam, iusto asperiores
-                  ducimus, iure totam voluptatum cumque est quia delectus.
+      <main>
+         <section class="section section--main">
+            <div class="section__content">
+               <h1>Create a beautiful landing page with no effort</h1>
+               <p>
+                  Urano is a premium template by CodyHouse to help you launch your
+                  startup with style
                </p>
-            </li>
-         </ul>
-      </section>
+               <a class="link" href="#product">Learn more</a>
+               <div class="section__companies">
+                  <img
+                     src="./assets/img/companies/google.png"
+                     alt="Google Companie"
+                  />
+                  <img
+                     src="./assets/img/companies/google.png"
+                     alt="Adobe Companie"
+                  />
+                  <img
+                     src="./assets/img/companies/amazon.png"
+                     alt="Amazon Companie"
+                  />
+               </div>
+            </div>
+   
+            <div class="section__media">
+               <div class="video video--init">
+                  <span class="video--init__icon">
+                     <i class="fa-solid fa-play"></i>
+                  </span>
+               </div>
+            </div>
+   
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/PbgKEjNBHqM?si=xyZf2q3Pv9rObLRr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+   
+            <img class="section__bg" src="assets/img/bg.png" alt="Background" />
+         </section>
+   
+         <section class="section section--cards">
+            <h2>First-class components</h2>
+   
+            <div class="cards">
+               <article class="cards__card">
+                  <i class="fa-solid fa-square-poll-vertical"></i>
+                  <h3>Navigations</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur</p>
+               </article>
+               <article class="cards__card">
+                  <i class="fa-solid fa-image"></i>
+                  <h3>Galleries</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur</p>
+               </article>
+               <article class="cards__card">
+                  <i class="fa-solid fa-wind"></i>
+                  <h3>Animations</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur</p>
+               </article>
+               <article class="cards__card">
+                  <i class="fa-solid fa-gamepad"></i>
+                  <h3>Controls</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur</p>
+               </article>
+            </div>
+         </section>
+   
+         <section class="section--parallax">
+            <div class="section__media">
+               <img
+                  src="./assets/img/sticky-feat/sticky-img1.png"
+                  alt="Sticky Image"
+               />
+            </div>
+            <div class="section__content">
+               <ul>
+                  <li>Import and organize your components</li>
+                  <li>Customize colors</li>
+                  <li>Export your components in Vue or React</li>
+                  <li>Share project with your team</li>
+               </ul>
+            </div>
+         </section>
+   
+         <section class="section section--tutorials">
+            <h2>Tutorials</h2>
+   
+            <div class="medias">
+               <article class="medias__video">
+                  <div class="video--init">
+                     <span class="video--init__icon">
+                        <i class="fa-solid fa-play"></i>
+                     </span>
+                  </div>
+   
+                  <h3 class="media__title">Getting started</h3>
+                  <p class="media__info">8:58</p>
+               </article>
+               <article class="medias__video">
+                  <div class="video--init">
+                     <span class="video--init__icon">
+                        <i class="fa-solid fa-play"></i>
+                     </span>
+                  </div>
+   
+                  <h3 class="media__title">Getting started</h3>
+                  <p class="media__info">8:58</p>
+               </article>
+               <article class="medias__video">
+                  <div class="video--init">
+                     <span class="video--init__icon">
+                        <i class="fa-solid fa-play"></i>
+                     </span>
+                  </div>
+   
+                  <h3 class="media__title">Getting started</h3>
+                  <p class="media__info">8:58</p>
+               </article>
+               <article class="medias__video">
+                  <div class="video--init">
+                     <span class="video--init__icon">
+                        <i class="fa-solid fa-play"></i>
+                     </span>
+                  </div>
+   
+                  <h3 class="media__title">Getting started</h3>
+                  <p class="media__info">8:58</p>
+               </article>
+               <article class="medias__video">
+                  <div class="video--init">
+                     <span class="video--init__icon">
+                        <i class="fa-solid fa-play"></i>
+                     </span>
+                  </div>
+   
+                  <h3 class="media__title">Getting started</h3>
+                  <p class="media__info">8:58</p>
+               </article>
+               <article class="medias__video">
+                  <div class="video--init">
+                     <span class="video--init__icon">
+                        <i class="fa-solid fa-play"></i>
+                     </span>
+                  </div>
+   
+                  <h3 class="media__title">Getting started</h3>
+                  <p class="media__info">8:58</p>
+               </article>
+            </div>
+         </section>
+   
+         <section class="section section--testimonials">
+            <h2>Hear it from our customers</h2>
+   
+            <div class="reviews">
+               <article class="reviews__review">
+                  <header>
+                     <div>
+                        <img
+                           src="https://source.unsplash.com/random"
+                           alt="Profile pic"
+                        />
+                        <h3 class="name">John Schnobrich</h3>
+                        <p class="function">Designer, Beta</p>
+                     </div>
+   
+                     <i class="fa-brands fa-twitter"></i>
+                  </header>
+               </article>
+               <article class="reviews__review">
+                  <header>
+                     <div>
+                        <img
+                           src="https://source.unsplash.com/random"
+                           alt="Profile pic"
+                        />
+                        <h3 class="name">John Schnobrich</h3>
+                        <p class="function">Designer, Beta</p>
+                     </div>
+   
+                     <i class="fa-brands fa-twitter"></i>
+                  </header>
+               </article>
+               <article class="reviews__review">
+                  <header>
+                     <div>
+                        <img
+                           src="https://source.unsplash.com/random"
+                           alt="Profile pic"
+                        />
+                        <h3 class="name">John Schnobrich</h3>
+                        <p class="function">Designer, Beta</p>
+                     </div>
+   
+                     <i class="fa-brands fa-twitter"></i>
+                  </header>
+               </article>
+               <article class="reviews__review">
+                  <header>
+                     <div>
+                        <img
+                           src="https://source.unsplash.com/random"
+                           alt="Profile pic"
+                        />
+                        <h3 class="name">John Schnobrich</h3>
+                        <p class="function">Designer, Beta</p>
+                     </div>
+   
+                     <i class="fa-brands fa-twitter"></i>
+                  </header>
+               </article>
+               <article class="reviews__review">
+                  <header>
+                     <div>
+                        <img
+                           src="https://source.unsplash.com/random"
+                           alt="Profile pic"
+                        />
+                        <h3 class="name">John Schnobrich</h3>
+                        <p class="function">Designer, Beta</p>
+                     </div>
+   
+                     <i class="fa-brands fa-twitter"></i>
+                  </header>
+               </article>
+            </div>
+         </section>
+   
+         <section class="section section--pricing">
+            <h2>Start creating today</h2>
+
+            <div class="pricing__switch">
+               <p>Monthly</p>
+               <p>Yearly</p>
+            </div>
+            <div class="pricing__plans">
+               <article class="pricing__plan">
+                  <p class="name">Free</p>
+                  <h3 class="price">$0 <span class="price__time">/month</span></h3>
+                  <ul class="access">
+                     <li><i class="fa-solid fa-circle-check"></i> 1x user</li>
+                     <li>
+                        <i class="fa-solid fa-circle-check"></i> Free 15/days trial
+                     </li>
+                     <li>
+                        <i class="fa-solid fa-circle-check"></i> Access to all
+                        features
+                     </li>
+                     <li><i class="fa-solid fa-circle-check"></i> 1 project</li>
+                  </ul>
+                  <buttton class="btn">Sign up</buttton>
+               </article>
+               <article class="pricing__plan">
+                  <span class="top">Popular</span>
+                  <p class="name">Pro</p>
+                  <h3 class="price">
+                     $15 <span class="price__time">/month</span>
+                  </h3>
+                  <ul class="access">
+                     <li><i class="fa-solid fa-circle-check"></i> 1x user</li>
+                     <li>
+                        <i class="fa-solid fa-circle-check"></i> Access to all
+                        features
+                     </li>
+                     <li><i class="fa-solid fa-circle-check"></i> 10 projects</li>
+                     <li>
+                        <i class="fa-solid fa-circle-check"></i> E-commerce
+                        integration
+                     </li>
+                     <li>
+                        <i class="fa-solid fa-circle-check"></i> Email support
+                     </li>
+                  </ul>
+                  <buttton class="btn btn--color">Sign up</buttton>
+               </article>
+               <article class="pricing__plan">
+                  <p class="name">Enterprise</p>
+                  <h3 class="price">
+                     $99 <span class="price__time">/month</span>
+                  </h3>
+                  <ul class="access">
+                     <li><i class="fa-solid fa-circle-check"></i> 10x user</li>
+                     <li>
+                        <i class="fa-solid fa-circle-check"></i> Access to all
+                        features
+                     </li>
+                     <li>
+                        <i class="fa-solid fa-circle-check"></i> Unlimited project
+                     </li>
+                     <li>
+                        <i class="fa-solid fa-circle-check"></i> E-commerce
+                        integration
+                     </li>
+                     <li><i class="fa-solid fa-circle-check"></i> 24/7 support</li>
+                     <li>
+                        <i class="fa-solid fa-circle-check"></i> Full security
+                     </li>
+                  </ul>
+                  <buttton class="btn">Sign up</buttton>
+               </article>
+            </div>
+         </section>
+   
+         <section class="section--questions">
+            <h2>Questions & Answers</h2>
+   
+            <ul class="questions">
+               <li class="questions__question">
+                  <span class="number">1</span>
+                  <h3 class="title">
+                     How can I download the invoice for my purchase?
+                  </h3>
+                  <p class="description">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Quis, exercitationem rem. Nulla aut amet error vero nemo
+                     dignissimos tempore magnam, adipisci veniam, iusto asperiores
+                     ducimus, iure totam voluptatum cumque est quia delectus.
+                  </p>
+               </li>
+            </ul>
+         </section>
+      </main>
 
       <footer class="footer">
          <img class="logo" src="./assets/img/logo.png" alt="Logo image" />
