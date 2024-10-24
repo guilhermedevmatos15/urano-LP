@@ -1,0 +1,28 @@
+@use '../partials/variables' as var;
+
+.link {
+   position: relative;
+   width: max-content;
+   color: map-get(var.$colors-neutral, 'dark-01');
+   text-decoration: none;
+   cursor: pointer;
+   transition: all 0.6s;
+
+   &::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0px;
+      height: 1px;
+      background-color: map-get(var.$colors-palet, 'primary');
+      transition: all 0.6s;
+   }
+
+   &:hover {
+      color: map-get(var.$colors-palet, 'primary');
+   }
+   &:hover::after {
+      width: 100%;
+   }
+}

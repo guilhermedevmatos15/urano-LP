@@ -4,6 +4,7 @@
    position: sticky;
    top: 0;
    left: 0;
+   z-index: 5;
    width: 100%;
    height: var.$header-height;
    padding: 20px 50px;
@@ -24,34 +25,6 @@
          justify-content: center;
          align-items: center;
          gap: 30px;
-
-         li, a {
-            position: relative;
-            display: block;
-            width: auto;
-            color: map-get(var.$colors-neutral, 'dark-01');
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.6s;
-            
-            &::after {
-               content: '';
-               position: absolute;
-               bottom: -3px;
-               left: 0;
-               width: 0px;
-               height: 1px;
-               background-color: map-get(var.$colors-palet, 'primary');
-               transition: all .6s;
-            }
-
-            &:hover {
-               color: map-get(var.$colors-palet, 'primary');
-            }
-            &:hover::after {
-               width: 100%;
-            }
-         }
       }
    }
 }

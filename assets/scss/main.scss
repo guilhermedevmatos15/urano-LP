@@ -7,6 +7,9 @@
 // * Components
 @use 'components/header';
 @use 'components/themeSwitch';
+@use 'components/section';
+@use 'components/link';
+@use 'components/video';
 
 body {
    width: 100%;
@@ -14,4 +17,10 @@ body {
    // padding-top: var.$header-height;
    font-family: var.$font-default;
    background-color: map-get(var.$colors-neutral, 'light-base');
+}
+
+main {
+   width: 100%;
+   max-width: 1300px;
+   margin: auto;
 }
