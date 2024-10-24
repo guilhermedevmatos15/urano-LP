@@ -4,4 +4,6 @@ build/
 .vscode/
 
 *.css.map
+**/*.css
+
 package-lock.json
