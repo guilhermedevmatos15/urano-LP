@@ -1,4 +1,4 @@
-import animationsInit from "./animations";
+import animationsInit from "./animations.js";
 
 // Inicializando animações
 animationsInit();
