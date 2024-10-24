@@ -99,14 +99,17 @@
          />
          <nav class="header__nav">
             <ul>
-               <li>Product</li>
-               <li>Learn</li>
-               <li>Testimonials</li>
-               <li>Pricing</li>
+               <li><a href="#">Product</a></li>
+               <li><a href="#">Learn</a></li>
+               <li><a href="#">Testimonials</a></li>
+               <li><a href="#">Pricing</a></li>
             </ul>
          </nav>
-         <!-- From Uiverse.io by cuzpq -->
-         <input type="checkbox" class="theme-checkbox" />
+         <!-- From Uiverse.io by alexruix -->
+            <label class="switch">
+               <input type="checkbox">
+               <span class="slider"></span>
+            </label>
       </header>
 
       <main>
@@ -114,8 +117,8 @@
             <div class="section__content">
                <h1>Create a beautiful landing page with no effort</h1>
                <p>
-                  Urano is a premium template by CodyHouse to help you launch your
-                  startup with style
+                  Urano is a premium template by CodyHouse to help you launch
+                  your startup with style
                </p>
                <a class="link" href="#product">Learn more</a>
                <div class="section__companies">
@@ -133,7 +136,7 @@
                   />
                </div>
             </div>
-   
+
             <div class="section__media">
                <div class="video video--init">
                   <span class="video--init__icon">
@@ -141,15 +144,15 @@
                   </span>
                </div>
             </div>
-   
+
             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/PbgKEjNBHqM?si=xyZf2q3Pv9rObLRr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-   
+
             <img class="section__bg" src="assets/img/bg.png" alt="Background" />
          </section>
-   
-         <section class="section section--cards">
+
+         <section class="section section--cards" id="product">
             <h2>First-class components</h2>
-   
+
             <div class="cards">
                <article class="cards__card">
                   <i class="fa-solid fa-square-poll-vertical"></i>
@@ -173,7 +176,7 @@
                </article>
             </div>
          </section>
-   
+
          <section class="section--parallax">
             <div class="section__media">
                <img
@@ -190,10 +193,10 @@
                </ul>
             </div>
          </section>
-   
-         <section class="section section--tutorials">
+
+         <section class="section section--tutorials" id="learn">
             <h2>Tutorials</h2>
-   
+
             <div class="medias">
                <article class="medias__video">
                   <div class="video--init">
@@ -201,7 +204,7 @@
                         <i class="fa-solid fa-play"></i>
                      </span>
                   </div>
-   
+
                   <h3 class="media__title">Getting started</h3>
                   <p class="media__info">8:58</p>
                </article>
@@ -211,7 +214,7 @@
                         <i class="fa-solid fa-play"></i>
                      </span>
                   </div>
-   
+
                   <h3 class="media__title">Getting started</h3>
                   <p class="media__info">8:58</p>
                </article>
@@ -221,7 +224,7 @@
                         <i class="fa-solid fa-play"></i>
                      </span>
                   </div>
-   
+
                   <h3 class="media__title">Getting started</h3>
                   <p class="media__info">8:58</p>
                </article>
@@ -231,7 +234,7 @@
                         <i class="fa-solid fa-play"></i>
                      </span>
                   </div>
-   
+
                   <h3 class="media__title">Getting started</h3>
                   <p class="media__info">8:58</p>
                </article>
@@ -241,7 +244,7 @@
                         <i class="fa-solid fa-play"></i>
                      </span>
                   </div>
-   
+
                   <h3 class="media__title">Getting started</h3>
                   <p class="media__info">8:58</p>
                </article>
@@ -251,16 +254,16 @@
                         <i class="fa-solid fa-play"></i>
                      </span>
                   </div>
-   
+
                   <h3 class="media__title">Getting started</h3>
                   <p class="media__info">8:58</p>
                </article>
             </div>
          </section>
-   
-         <section class="section section--testimonials">
+
+         <section class="section section--testimonials" id="testimonials">
             <h2>Hear it from our customers</h2>
-   
+
             <div class="reviews">
                <article class="reviews__review">
                   <header>
@@ -272,7 +275,7 @@
                         <h3 class="name">John Schnobrich</h3>
                         <p class="function">Designer, Beta</p>
                      </div>
-   
+
                      <i class="fa-brands fa-twitter"></i>
                   </header>
                </article>
@@ -286,7 +289,7 @@
                         <h3 class="name">John Schnobrich</h3>
                         <p class="function">Designer, Beta</p>
                      </div>
-   
+
                      <i class="fa-brands fa-twitter"></i>
                   </header>
                </article>
@@ -300,7 +303,7 @@
                         <h3 class="name">John Schnobrich</h3>
                         <p class="function">Designer, Beta</p>
                      </div>
-   
+
                      <i class="fa-brands fa-twitter"></i>
                   </header>
                </article>
@@ -314,7 +317,7 @@
                         <h3 class="name">John Schnobrich</h3>
                         <p class="function">Designer, Beta</p>
                      </div>
-   
+
                      <i class="fa-brands fa-twitter"></i>
                   </header>
                </article>
@@ -328,14 +331,14 @@
                         <h3 class="name">John Schnobrich</h3>
                         <p class="function">Designer, Beta</p>
                      </div>
-   
+
                      <i class="fa-brands fa-twitter"></i>
                   </header>
                </article>
             </div>
          </section>
-   
-         <section class="section section--pricing">
+
+         <section class="section section--pricing" id="pricing">
             <h2>Start creating today</h2>
 
             <div class="pricing__switch">
@@ -345,11 +348,14 @@
             <div class="pricing__plans">
                <article class="pricing__plan">
                   <p class="name">Free</p>
-                  <h3 class="price">$0 <span class="price__time">/month</span></h3>
+                  <h3 class="price">
+                     $0 <span class="price__time">/month</span>
+                  </h3>
                   <ul class="access">
                      <li><i class="fa-solid fa-circle-check"></i> 1x user</li>
                      <li>
-                        <i class="fa-solid fa-circle-check"></i> Free 15/days trial
+                        <i class="fa-solid fa-circle-check"></i> Free 15/days
+                        trial
                      </li>
                      <li>
                         <i class="fa-solid fa-circle-check"></i> Access to all
@@ -371,7 +377,9 @@
                         <i class="fa-solid fa-circle-check"></i> Access to all
                         features
                      </li>
-                     <li><i class="fa-solid fa-circle-check"></i> 10 projects</li>
+                     <li>
+                        <i class="fa-solid fa-circle-check"></i> 10 projects
+                     </li>
                      <li>
                         <i class="fa-solid fa-circle-check"></i> E-commerce
                         integration
@@ -394,13 +402,16 @@
                         features
                      </li>
                      <li>
-                        <i class="fa-solid fa-circle-check"></i> Unlimited project
+                        <i class="fa-solid fa-circle-check"></i> Unlimited
+                        project
                      </li>
                      <li>
                         <i class="fa-solid fa-circle-check"></i> E-commerce
                         integration
                      </li>
-                     <li><i class="fa-solid fa-circle-check"></i> 24/7 support</li>
+                     <li>
+                        <i class="fa-solid fa-circle-check"></i> 24/7 support
+                     </li>
                      <li>
                         <i class="fa-solid fa-circle-check"></i> Full security
                      </li>
@@ -409,10 +420,10 @@
                </article>
             </div>
          </section>
-   
+
          <section class="section--questions">
             <h2>Questions & Answers</h2>
-   
+
             <ul class="questions">
                <li class="questions__question">
                   <span class="number">1</span>
@@ -422,8 +433,9 @@
                   <p class="description">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Quis, exercitationem rem. Nulla aut amet error vero nemo
-                     dignissimos tempore magnam, adipisci veniam, iusto asperiores
-                     ducimus, iure totam voluptatum cumque est quia delectus.
+                     dignissimos tempore magnam, adipisci veniam, iusto
+                     asperiores ducimus, iure totam voluptatum cumque est quia
+                     delectus.
                   </p>
                </li>
             </ul>

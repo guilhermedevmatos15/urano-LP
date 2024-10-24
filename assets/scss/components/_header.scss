@@ -1,6 +1,57 @@
 @use '../partials/variables' as var;
 
 .header {
+   position: sticky;
+   top: 0;
+   left: 0;
    width: 100%;
    height: var.$header-height;
+   padding: 20px 50px;
+   background-color: map-get(var.$colors-neutral, 'light-base');
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+   &__logo {
+      width: 100%;
+      max-width: 50px;
+   }
+
+   &__nav {
+      ul {
+         list-style: none;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 30px;
+
+         li, a {
+            position: relative;
+            display: block;
+            width: auto;
+            color: map-get(var.$colors-neutral, 'dark-01');
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.6s;
+            
+            &::after {
+               content: '';
+               position: absolute;
+               bottom: -3px;
+               left: 0;
+               width: 0px;
+               height: 1px;
+               background-color: map-get(var.$colors-palet, 'primary');
+               transition: all .6s;
+            }
+
+            &:hover {
+               color: map-get(var.$colors-palet, 'primary');
+            }
+            &:hover::after {
+               width: 100%;
+            }
+         }
+      }
+   }
 }
