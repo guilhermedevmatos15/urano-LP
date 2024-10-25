@@ -1,0 +1,46 @@
+@use '../partials/variables' as var;
+
+.cards {
+   width: 100%;
+   margin-top: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+
+   &__card {
+      width: 100%;
+      max-width: 380px;
+
+      i {
+         width: 60px;
+         aspect-ratio: 1/1;
+         margin: auto;
+         font-size: 1.8rem;
+         color: map-get(var.$colors-palet, 'secondary');
+         padding: 15px;
+         border-radius: 50%;
+         background: linear-gradient(
+            180deg,
+            map-get(var.$colors-palet, 'quaternary'),
+            map-get(var.$colors-palet, 'terceary')
+         );
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      h3 {
+         margin-top: 25px;
+         font-size: 1.3rem;
+         font-weight: 600;
+      }
+
+      p {
+         margin-top: 12px;
+         font-size: 1.1rem;
+         color: map-get(var.$colors-neutral, 'dark-02');
+         opacity: 0.7;
+      }
+   }
+}

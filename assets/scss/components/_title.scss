@@ -1,0 +1,25 @@
+@use '../partials/variables' as var;
+
+.title {
+   $size-base: 1rem;
+
+   color: map-get(var.$colors-neutral, 'dark-01');
+   text-decoration: none;
+
+   @for $i from 1 through 10 {
+      &--0#{$i} {
+         font-size: $size-base * (calc($i / 2));
+         line-height: ($size-base * (calc($i / 2))) + 0.8rem;
+
+         @if ($i <= 3) {
+            font-weight: 500;
+         } @else if ($i <= 4) {
+            font-weight: 600;
+         } @else if ($i <= 6) {
+            font-weight: 700;
+         } @else {
+            font-weight: 800;
+         }
+      }
+   }
+}

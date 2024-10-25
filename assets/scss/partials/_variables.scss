@@ -5,7 +5,8 @@ $font-default: 'ALbert Sans', Arial, sans-serif;
 $colors-palet: (
    'primary': #6826C9,
    'secondary': #FF475A,
-   'terceary': #FFD0D5
+   'terceary': #FFD0D5,
+   'quaternary': #ffebed,
 );
 
 $colors-neutral: (
@@ -13,8 +14,8 @@ $colors-neutral: (
    'light-01': #EFEFF0,
    'light-02': #9B989F,
    'dark-base': black,
-   'dark-01': #161515,
+   'dark-01': #0B0415,
    'dark-02': #3f3d3d,
 );
 
-$header-height: 135px;
+$header-height: 100px;
