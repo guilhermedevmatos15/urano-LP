@@ -295,6 +295,58 @@
          }
       }
    }
+
+   &--questions {
+      margin-top: 150px;
+
+      h2 {
+         text-align: center;
+         font-weight: 600;
+      }
+
+      .questions {
+         margin-top: 50px;
+         list-style: none;
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         flex-wrap: wrap;
+         gap: 50px;
+
+         &__question {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+
+            .number {
+               width: 100px;
+               aspect-ratio: 1/1;
+               border-radius: 50%;
+               background-color: map-get(var.$colors-neutral, 'light-01');
+               color: map-get(var.$colors-neutral, 'dark-02');
+               font-weight: 600;
+               font-size: 0.8rem;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+
+            div {
+               h3 {
+                  font-weight: 700;
+                  font-size: 1.1rem;
+               }
+               p {
+                  margin-top: 5px;
+                  font-size: 0.9rem;
+                  opacity: 0.6;
+               }
+            }
+         }
+      }
+   }
 }
 
 @keyframes moviment {
