@@ -181,6 +181,120 @@
          text-align: center;
       }
    }
+
+   &--pricing {
+      margin-top: 150px;
+
+      h2 {
+         text-align: center;
+      }
+
+      &__switch {
+         width: 100%;
+         max-width: 200px;
+         padding: 5px;
+         border-radius: 100px;
+         margin: 30px auto 0 auto;
+         background-color: map-get(var.$colors-neutral, 'light-01');
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         gap: 10px;
+
+         span {
+            width: 50%;
+            background-color: transparent;
+            padding: 10px 20px;
+            color: map-get(var.$colors-neutral, 'dark-02');
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: all .6s;
+
+            &:last-child {
+               text-align: right;
+            }
+
+            &.active {
+               background-color: map-get(var.$colors-palet, 'primary');
+               color: white;
+            }
+         }
+      }
+
+      &__plans {
+         margin-top: 30px;
+         display: flex;
+         justify-content: center;
+         // align-items: center;
+         gap: 30px;
+
+         .section--pricing__plan {
+            position: relative;
+            width: 100%;
+            max-width: 325px;
+            min-height: 380px;
+            padding: 20px;
+            background-color: map-get(var.$colors-neutral, 'light-01');
+            color: rgba(map-get(var.$colors-neutral, 'dark-01'), 0.8);border-radius: 10px;
+            border: 2px solid transparent;
+
+            .name {
+               font-size: 1.1rem;
+               font-weight: 600;
+            }
+
+            .price {
+               margin-top: 10px;
+               font-size: 2.6rem;
+
+               span {
+                  font-size: 1rem;
+                  opacity: 0.5;
+                  font-weight: 300;
+               }
+            }
+
+            .access {
+               margin-top: 20px;
+               list-style: none;
+
+               li {
+                  margin-top: 10px;
+                  font-size: 0.9rem;
+               }
+            }
+
+            .btn {
+               max-width: 90%;
+               margin-top: 40px;
+               position: absolute;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               bottom: 0;
+            }
+
+            .top {
+               position: absolute;
+               top: 20px;
+               right: 20px;
+               font-size: 0.8rem;
+               padding: 5px;
+               background-color: map-get(var.$colors-neutral, 'dark-02');
+               border-radius: 5px;
+               color: white;
+            }
+
+            &:nth-child(2) {
+               $bg: map-get(var.$colors-palet, 'primary');
+               background-color: transparent;
+               border: 2px solid $bg;
+               box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            }
+         }
+      }
+   }
 }
 
 @keyframes moviment {
