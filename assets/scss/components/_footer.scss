@@ -1,0 +1,43 @@
+@use '../partials/variables' as var;
+
+.footer {
+   margin-top: 150px;
+   padding: 50px;
+   background-color: map-get(var.$colors-neutral, 'dark-01');
+   border-top-left-radius: 30px;
+   border-top-right-radius: 30px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+   .logo {
+      width: 60px;
+      cursor: pointer;
+   }
+
+   &__nav {
+      ul {
+         list-style: none;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 30px;
+
+         a {
+            color: map-get(var.$colors-neutral, 'light-01');
+         }
+      }
+   }
+
+   > a, > a i {
+      font-size: 2rem;
+      color: map-get(var.$colors-neutral, 'light-01');
+      text-decoration: none;
+      cursor: pointer;
+      transition: all .6s;
+
+      &:hover {
+         color: map-get(var.$colors-palet, 'primary');
+      }
+   }
+}
