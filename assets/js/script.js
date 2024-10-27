@@ -3,21 +3,21 @@ import animationsInit from "./animations.js";
 // Inicializando animações
 animationsInit();
 
-// Lógica do menu
+// Lógica modal
 (() => {
-   const menu = document.querySelector('.menu');
+   const $modalMenu = document.querySelector('.modal--menu');
    const $activeMenuElements = [...document.querySelectorAll('[data-menu="on"]')];
    const $disableMenuElements = [...document.querySelectorAll('[data-menu="off"]')];
 
    $activeMenuElements.forEach((element) => {
       element.addEventListener('click', () => {
-         menu.classList.add('active');
+         $modalMenu.classList.add('active');
       });
    });
 
    $disableMenuElements.forEach((element) => {
       element.addEventListener('click', () => {
-         menu.classList.remove('active');
+         $modalMenu.classList.remove('active');
       });
    });
    
@@ -25,5 +25,23 @@ animationsInit();
       if (window.innerWidth >= 900) {
          menu.classList.remove('active');
       }
+   });
+
+   const $modalVideo = document.querySelector('.modal--video');
+   const $activeVideoElements = [...document.querySelectorAll('[data-video="on"]')];
+   const $disableVideoElements = [...document.querySelectorAll('[data-video="off"]')];
+   const $iframe = $modalVideo.querySelector('iframe');
+   const $moviePlayer = $iframe.querySelector('#movie_player');
+
+   $activeVideoElements.forEach((element) => {
+      element.addEventListener('click', () => {
+         $modalVideo.classList.add('active');
+      });
+   });
+   $disableVideoElements.forEach((element) => {
+      element.addEventListener('click', () => {
+         $modalVideo.classList.remove('active');
+         $moviePlayer.classList.replace('playing-mode', 'paused-mode');
+      });
    });
 })();
