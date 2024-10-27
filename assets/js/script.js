@@ -31,7 +31,6 @@ animationsInit();
    const $activeVideoElements = [...document.querySelectorAll('[data-video="on"]')];
    const $disableVideoElements = [...document.querySelectorAll('[data-video="off"]')];
    const $iframe = $modalVideo.querySelector('iframe');
-   const $moviePlayer = $iframe.querySelector('#movie_player');
 
    $activeVideoElements.forEach((element) => {
       element.addEventListener('click', () => {
@@ -41,7 +40,7 @@ animationsInit();
    $disableVideoElements.forEach((element) => {
       element.addEventListener('click', () => {
          $modalVideo.classList.remove('active');
-         $moviePlayer.classList.replace('playing-mode', 'paused-mode');
+         $iframe.src = $iframe.src; // "Redefine" o vídeo
       });
    });
 })();
