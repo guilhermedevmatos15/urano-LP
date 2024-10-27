@@ -7,7 +7,7 @@
 // * Components
 @use 'components/header';
 @use 'components/themeSwitch';
-@use 'components/section';
+@use 'components/sections/section';
 @use 'components/link';
 @use 'components/video';
 @use 'components/title';
@@ -19,7 +19,6 @@
 body {
    width: 100%;
    min-height: 100vh;
-   // padding-top: var.$header-height;
    font-family: var.$font-default;
    background-color: map-get(var.$colors-neutral, 'light-base');
 }
@@ -27,5 +26,12 @@ body {
 main {
    width: 100%;
    max-width: 1300px;
+   padding: 0 25px;
    margin: auto;
+}
+
+@media (max-width: 500px) {
+   :root {
+      font-size: 14px;
+   }
 }

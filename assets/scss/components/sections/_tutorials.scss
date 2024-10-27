@@ -1,0 +1,45 @@
+@use '../../partials/variables' as var;
+
+.section--tutorials {
+   margin-top: 300px;
+
+   h2 {
+      text-align: center;
+   }
+
+   &__container {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      article {
+         overflow: hidden;
+         width: 100%;
+         max-width: 400px;
+         border-radius: 10px;
+         
+         .video {
+            max-width: 100%;
+            box-shadow: none;
+            aspect-ratio: 16/12;
+         }
+
+         h3 {
+            font-size: 1.1rem;
+            margin-top: 15px;
+            font-weight: 700;
+            color: map-get(var.$colors-neutral, 'dark-01');
+         }
+
+         p {
+            margin-top: 2px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+         }
+      }
+   }
+}

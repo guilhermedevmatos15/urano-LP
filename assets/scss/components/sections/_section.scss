@@ -1,0 +1,12 @@
+@use 'hero';
+@use 'cards';
+@use 'parallax';
+@use 'tutorials';
+@use 'testimonials';
+@use 'pricing';
+@use 'questions';
+
+.section {
+   margin-top: 80px;
+   width: 100%;
+}

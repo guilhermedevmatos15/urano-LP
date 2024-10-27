@@ -1,0 +1,124 @@
+@use '../../partials/variables' as var;
+
+@keyframes moviment {
+   0% {
+      top: -50px;
+   }
+   50% {
+      top: 0;
+   }
+   100% {
+      top: -50px;
+   }
+}
+
+.section--hero {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 100px;
+
+   > * {
+      width: 50%;
+   }
+
+   &__content {
+      h1 {
+         max-width: 575px;
+         // min-width: 500px;
+      }
+
+      p {
+         max-width: 575px;
+         margin-top: 30px;
+         font-size: 1.1rem;
+         color: map-get(var.$colors-neutral, 'dark-02');
+      }
+
+      a {
+         padding-left: 5px;
+         display: block;
+         margin-top: 30px;
+         color: map-get(var.$colors-palet, 'primary');
+         font-size: 1.1rem;
+
+         &::after {
+            width: 110%;
+         }
+
+         &:hover {
+            color: map-get(var.$colors-palet, 'secondary');
+         }
+         &:hover::after {
+            background-color: map-get(var.$colors-palet, 'secondary');
+         }
+      }
+
+      .section--hero__companies {
+         margin-top: 20px;
+         display: flex;
+         align-items: center;
+         gap: 10px;
+
+         img {
+            // width: 50px;
+            opacity: 0.5;
+            filter: grayscale(100%);
+            transition: all 0.6s;
+
+            &:hover {
+               filter: grayscale(0);
+               transform: scale(110%);
+            }
+         }
+      }
+   }
+
+   &__media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__bg {
+      position: absolute;
+      right: 0px;
+      transform: rotate(45deg);
+      opacity: 0.2;
+      z-index: -1;
+      width: 450px;
+      border-radius: 50%;
+      animation: moviment 3s infinite ease-in-out;
+   }
+}
+
+@media (max-width: 1200px) {
+   .section--hero {
+      flex-direction: column;
+      gap: 50px;
+
+      > * {
+         width: 100%;
+         text-align: center;
+
+         h1, p {
+            margin: 30px auto 0 auto;
+         }
+
+         a {
+            margin: 30px auto 0 auto;
+            text-align: center;
+         }
+
+         .section--hero__companies {
+            justify-content: center;
+            align-items: center;
+         }
+      }
+      &__bg {
+         width: 50%;
+      }
+   }
+
+}

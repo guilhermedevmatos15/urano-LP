@@ -1,0 +1,85 @@
+@use '../../partials/variables' as var;
+
+.section--parallax {
+   margin-top: 300px;
+   display: flex;
+   justify-content: center;
+   gap: 100px;
+
+   > * {
+      width: 50%;
+   }
+
+   > :first-child {
+      position: relative;
+      // height: 100%;
+
+      img {
+         position: sticky;
+         top: 200px;
+         left: 0;
+         width: 100%;
+         max-width: 700px;
+         border-radius: 10px;
+      }
+   }
+
+   > :last-child {
+      padding: 200px 0 100px 0;
+
+      ul {
+         list-style: none;
+         display: flex;
+         flex-direction: column;
+         gap: 250px;
+
+         li {
+            width: 100%;
+            max-width: 400px;
+            font-size: 2.2rem;
+            font-weight: 700;
+         }
+      }
+   }
+}
+
+@media (max-width: 900px) {
+   .section--parallax {
+      margin-top: 200px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 75px;
+
+      > * {
+         width: 100%;
+      }
+
+      > :first-child {
+         img {
+            position: static;
+            display: block;
+            margin: auto;
+            width: 100%;
+            max-width: 500px;
+         }
+      }
+
+      > :last-child {
+         padding-top: 0;
+         margin: auto;
+         text-align: center;
+         
+         ul {
+            justify-content: flex-start;
+            align-items: center;
+            gap: 150px;
+
+            li {
+               font-weight: 300;
+               font-size: 1.6rem;
+            }
+         }
+      }
+   }
+}

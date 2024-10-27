@@ -27,4 +27,36 @@
          gap: 30px;
       }
    }
+
+   .fa-bars {
+      display: none;
+      font-size: 1.2rem;
+      color: map-get(var.$colors-neutral, 'dark-01');
+      cursor: pointer;
+      transition: all .6s;
+      
+      &:hover {
+         color: map-get(var.$colors-palet, 'primary');
+      }
+   }
+}
+
+@media (min-width: 1920px) {
+   .header {
+      width: 1920px;
+      margin: auto;
+   }
+}
+
+@media (max-width: 900px) {
+   .header {
+      justify-content: space-between;
+
+      &__nav, .switch {
+         display: none;
+      }
+      .fa-bars {
+         display: block;
+      }
+   }
 }
