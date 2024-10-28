@@ -94,3 +94,39 @@ $disableVideoElements.forEach((element) => {
       $iframe.src = $iframe.src; // "Redefine" o vídeo
    });
 });
+
+// Plans logic
+const priceSwitch = document.querySelector('.section--pricing__switch');
+const freePlanValueElement = document.querySelector('.section--pricing__plans > article:nth-child(1) > h3');
+const proPlanValueElement = document.querySelector('.section--pricing__plans > article:nth-child(2) > h3');
+const enterprisePlanValueElement = document.querySelector('.section--pricing__plans > article:nth-child(3) > h3');
+
+const monthly = {
+   element: priceSwitch.querySelector('.monthly'),
+   freePlanValue: 0,
+   proPlanValue: 15,
+   enterprisePlanValue: 99,
+};
+const yearly = {
+   element: priceSwitch.querySelector('.yearly'),
+   freePlanValue: 0,
+   proPlanValue: 99,
+   enterprisePlanValue: 699,
+};
+
+monthly.element.addEventListener('click', () => {
+   monthly.element.classList.add('active');
+   yearly.element.classList.remove('active');
+
+   freePlanValueElement.innerHTML = `$${monthly.freePlanValue} <span class="price__time">/ month</span>`;
+   proPlanValueElement.innerHTML = `$${monthly.proPlanValue} <span class="price__time">/ month</span>`;
+   enterprisePlanValueElement.innerHTML = `$${monthly.enterprisePlanValue} <span class="price__time">/ month</span>`;
+});
+yearly.element.addEventListener('click', () => {
+   monthly.element.classList.remove('active');
+   yearly.element.classList.add('active');
+
+   freePlanValueElement.innerHTML = `$${yearly.freePlanValue} <span class="price__time">/ year</span>`;
+   proPlanValueElement.innerHTML = `$${yearly.proPlanValue} <span class="price__time">/ year</span>`;
+   enterprisePlanValueElement.innerHTML = `$${yearly.enterprisePlanValue} <span class="price__time">/ year</span>`;
+});
