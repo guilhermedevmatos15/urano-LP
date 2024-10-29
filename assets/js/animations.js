@@ -28,4 +28,10 @@ export default function animationsInit() {
          });
       });
    }, 200);
+
+   const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 800, // Velocidade do scroll em milissegundos
+      offset: 150,  // Ajuste para parar antes ou depois do destino
+      easing: 'easeInOutCubic' // Efeito de aceleração do scroll
+   });
 }

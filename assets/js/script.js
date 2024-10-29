@@ -74,6 +74,10 @@ window.addEventListener('resize', () => {
    }
 });
 
+$modalMenu.querySelector('ul li').addEventListener('click', () => {
+   $modalMenu.classList.remove('active');
+})
+
 const $modalVideo = document.querySelector('.modal--video');
 const $activeVideoElements = [
    ...document.querySelectorAll('[data-video="on"]'),
