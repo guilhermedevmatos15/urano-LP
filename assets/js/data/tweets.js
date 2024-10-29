@@ -4,7 +4,7 @@ import generateLorem from '../generateLorem.js';
 const peoples = [
    {
       name: 'John Smith',
-      image: 'https://randomuser.me/api/portraits/men/3.jpg',
+      image: 'https://randomuser.me/api/portraits/en/3.jpg',
       role: 'Senior Developer',
       message: generateLorem(getRandomNumber(3, 39)),
    },
@@ -138,7 +138,5 @@ for (let i = 1; i <= 9; i++) {
 
    peoples.splice(index, 1);
 }
-
-console.log(tweets);
 
 export { tweets };

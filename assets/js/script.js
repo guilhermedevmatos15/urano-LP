@@ -96,37 +96,43 @@ $disableVideoElements.forEach((element) => {
 });
 
 // Plans logic
-const priceSwitch = document.querySelector('.section--pricing__switch');
-const freePlanValueElement = document.querySelector('.section--pricing__plans > article:nth-child(1) > h3');
-const proPlanValueElement = document.querySelector('.section--pricing__plans > article:nth-child(2) > h3');
-const enterprisePlanValueElement = document.querySelector('.section--pricing__plans > article:nth-child(3) > h3');
+const $freePlan = document.querySelector('.section--pricing__plans > article:nth-child(1) > h3');
+const $proPlanValue = document.querySelector('.section--pricing__plans > article:nth-child(2) > h3');
+const $enterprisePlanValue = document.querySelector('.section--pricing__plans > article:nth-child(3) > h3');
 
 const monthly = {
-   element: priceSwitch.querySelector('.monthly'),
-   freePlanValue: 0,
-   proPlanValue: 15,
-   enterprisePlanValue: 99,
+   $switchElement: document.querySelector('.section--pricing__switch .monthly'),
+   free: 0,
+   pro: 15,
+   enterprise: 99,
 };
 const yearly = {
-   element: priceSwitch.querySelector('.yearly'),
-   freePlanValue: 0,
-   proPlanValue: 99,
-   enterprisePlanValue: 699,
+   $switchElement: document.querySelector('.section--pricing__switch .yearly'),
+   free: 0,
+   pro: 99,
+   enterprise: 699,
 };
 
-monthly.element.addEventListener('click', () => {
-   monthly.element.classList.add('active');
-   yearly.element.classList.remove('active');
+monthly.$switchElement.addEventListener('click', () => {
+   monthly.$switchElement.classList.add('active');
+   yearly.$switchElement.classList.remove('active');
 
-   freePlanValueElement.innerHTML = `$${monthly.freePlanValue} <span class="price__time">/ month</span>`;
-   proPlanValueElement.innerHTML = `$${monthly.proPlanValue} <span class="price__time">/ month</span>`;
-   enterprisePlanValueElement.innerHTML = `$${monthly.enterprisePlanValue} <span class="price__time">/ month</span>`;
+   $freePlan.innerHTML = `$${monthly.free} <span class="price__time">/ month</span>`;
+   $proPlanValue.innerHTML = `$${monthly.pro} <span class="price__time">/ month</span>`;
+   $enterprisePlanValue.innerHTML = `$${monthly.enterprise} <span class="price__time">/ month</span>`;
 });
-yearly.element.addEventListener('click', () => {
-   monthly.element.classList.remove('active');
-   yearly.element.classList.add('active');
+yearly.$switchElement.addEventListener('click', () => {
+   monthly.$switchElement.classList.remove('active');
+   yearly.$switchElement.classList.add('active');
 
-   freePlanValueElement.innerHTML = `$${yearly.freePlanValue} <span class="price__time">/ year</span>`;
-   proPlanValueElement.innerHTML = `$${yearly.proPlanValue} <span class="price__time">/ year</span>`;
-   enterprisePlanValueElement.innerHTML = `$${yearly.enterprisePlanValue} <span class="price__time">/ year</span>`;
+   $freePlan.innerHTML = `$${yearly.free} <span class="price__time">/ year</span>`;
+   $proPlanValue.innerHTML = `$${yearly.pro} <span class="price__time">/ year</span>`;
+   $enterprisePlanValue.innerHTML = `$${yearly.enterprise} <span class="price__time">/ year</span>`;
+});
+
+// Questions logic
+const questions = [...document.querySelectorAll('.questions li')];
+
+questions.forEach((question, index) => {
+   question.querySelector('.number').innerHTML = index + 1;
 });
