@@ -1,5 +1,5 @@
-import getRandomNumber from '../getRandomNumber.js';
-import generateLorem from '../generateLorem.js';
+import getRandomNumber from '../utils/getRandomNumber.js';
+import generateLorem from '../utils/generateLorem.js';
 
 const peoples = [
    {

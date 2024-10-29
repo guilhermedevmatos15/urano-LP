@@ -10,7 +10,7 @@ const $tutorialsContainer = document.querySelector('.section--tutorials__contain
 
 tutorials.forEach((tutorial) => {
    $tutorialsContainer.innerHTML += `
-      <article>
+      <article data-reveal="bottom">
          <div class="video" data-video="on">
             <span class="video__icon">
                <i class="fa-solid fa-play"></i>
@@ -28,7 +28,7 @@ const $tweetsContainer = document.querySelector('.reviews');
 
 tweets.forEach((tweet) => {
    $tweetsContainer.innerHTML += `
-      <article class="reviews__review">
+      <article class="reviews__review" data-reveal="bottom">
          <header>
             <div>
                <img

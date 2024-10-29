@@ -1,12 +1,12 @@
 @use '../partials/variables' as var;
 
 .video {
-   $max-width: 600px;
+   $max-width: 550px;
    width: 100%;
    max-width: $max-width;
    height: auto;
-   aspect-ratio: 16/9;
-   background-image: url('../../../assets/img/sticky-feat/sticky-img4.png');
+   aspect-ratio: 16/10;
+   background-image: url('../../../assets/img/sticky-feat/sticky-img1.png');
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;

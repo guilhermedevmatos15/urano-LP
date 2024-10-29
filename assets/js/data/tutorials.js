@@ -1,4 +1,4 @@
-import getRandomNumber from "../getRandomNumber.js";
+import getRandomNumber from "../utils/getRandomNumber.js";
 
 const titles = [
    'Silent Echoes',
