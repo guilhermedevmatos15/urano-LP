@@ -37,7 +37,13 @@
             width: 100%;
             max-width: 400px;
             font-size: 2.2rem;
-            font-weight: 700;
+            font-weight: 300;
+            opacity: 0.4;
+            
+            &.active {
+               font-weight: 700;
+               opacity: 1;
+            }
          }
       }
    }
@@ -76,7 +82,6 @@
             gap: 150px;
 
             li {
-               font-weight: 300;
                font-size: 1.6rem;
             }
          }

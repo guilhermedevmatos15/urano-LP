@@ -136,3 +136,21 @@ const questions = [...document.querySelectorAll('.questions li')];
 questions.forEach((question, index) => {
    question.querySelector('.number').innerHTML = index + 1;
 });
+
+// Paralax logic
+const img = document.querySelector('.section--parallax img');
+const itens = [...document.querySelectorAll('.section--parallax ul li')];
+const middleOfScreen = window.innerHeight / 2;
+
+window.addEventListener('scroll', () => {
+   itens.forEach((item, index) => {
+      const rect = item.getBoundingClientRect();
+
+      if (rect.top <= middleOfScreen && rect.bottom >= middleOfScreen) {
+         itens.forEach((el) => el.classList.remove('active')); // Removendo 'active' de todos
+         item.classList.add('active'); // Depois adicionando 'active' no que foi "scrolado"
+
+         img.setAttribute('src', `./assets/img/sticky-feat/sticky-img${index + 1}.png`);
+      }
+   });
+});
