@@ -158,3 +158,19 @@ window.addEventListener('scroll', () => {
       }
    });
 });
+
+// Dark mode
+const switchsTheme = [...document.querySelectorAll('[data-theme]')];
+const body = document.querySelector('body');
+
+switchsTheme.forEach((el) => {
+   el.addEventListener('change', () => {
+      if (el.checked) {
+         body.classList.add('dark');
+         switchsTheme.forEach((el) => el.checked = true); // Fazendo com que todos inputs fiquem "ligados"
+      } else {
+         body.classList.remove('dark');
+         switchsTheme.forEach((el) => el.checked = false); // Fazendo com que todos inputs fiquem "desligados"
+      }
+   });
+});

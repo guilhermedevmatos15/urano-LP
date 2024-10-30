@@ -22,6 +22,15 @@ body {
    min-height: 100vh;
    font-family: var.$font-default;
    background-color: map-get(var.$colors-neutral, 'light-base');
+   
+   &.dark {
+      background-color: map-get(var.$colors-neutral, 'dark-01');
+      color: white;
+   }
+}
+
+* {
+   transition: background-color 0.6s;
 }
 
 main {

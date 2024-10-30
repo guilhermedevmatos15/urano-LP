@@ -5,8 +5,19 @@
    padding: 50px 20px;
    background-color: map-get(var.$colors-neutral, 'light-01');
    border-radius: 50px;
-
+   
    h2 {
       text-align: center;
+   }
+}
+
+// Dark mode
+body.dark {
+   .section--testimonials {
+      background-color: map-get(var.$colors-neutral, 'dark-02');
+
+      h2 {
+         color: white;
+      }
    }
 }

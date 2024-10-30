@@ -52,3 +52,10 @@
       }
    }
 }
+
+// Dark mode
+body.dark {
+   .footer {
+      background-color: lighten(map-get(var.$colors-neutral, 'dark-01'), 20%);
+   }
+}

@@ -4,3 +4,13 @@
    margin-top: 200px;
    text-align: center;
 }
+
+// Dark mode
+body.dark {
+   .section--cards {
+      h2 {
+         color: white;
+      }
+   }
+}
+

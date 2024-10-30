@@ -72,3 +72,12 @@
       }
    }
 }
+
+// Dark mode
+body.dark {
+   .reviews {
+      &__review {
+         background-color: map-get(var.$colors-neutral, 'dark-01');
+      }
+   }
+}

@@ -51,3 +51,29 @@
       }
    }
 }
+
+// Dark mode
+body.dark {
+   .section--questions {
+      h2 {
+         color: white;
+      }
+
+      .questions {
+         color: white;
+
+         &__question {
+            .number {
+               background-color: map-get(var.$colors-neutral, 'dark-02');
+               color: white;
+            }
+         }
+      }
+
+      div {
+         h3 {
+            color: white;
+         }
+      }
+   }
+}

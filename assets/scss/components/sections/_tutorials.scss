@@ -43,3 +43,22 @@
       }
    }
 }
+
+// Dark mode
+body.dark {
+   .section--tutorials {
+      h2 {
+         color: white;
+      }
+
+      &__container {
+         h3 {
+            color: white;
+         }
+
+         p {
+            opacity: 0.4;
+         }
+      }
+   }
+}
